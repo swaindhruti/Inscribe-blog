@@ -1,0 +1,9 @@
+.vscode
+
+// Inscribe-blog-backend
+
+Inscribe-blog-backend/node_modules
+Inscribe-blog-backend/.wrangler
+Inscribe-blog-backend/wrangler.toml
+Inscribe-blog-backend/.env
+
