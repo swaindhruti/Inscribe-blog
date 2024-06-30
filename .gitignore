@@ -7,3 +7,7 @@ Inscribe-blog-backend/.wrangler
 Inscribe-blog-backend/wrangler.toml
 Inscribe-blog-backend/.env
 
+// Inscribe-common-modules
+
+Inscribe-common-modules/node_modules
+
