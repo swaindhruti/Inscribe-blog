@@ -11,3 +11,6 @@ Inscribe-blog-backend/.env
 
 Inscribe-common-modules/node_modules
 
+// Inscribe-blog-frontend
+
+Inscribe-blog-frontend/node_modules
