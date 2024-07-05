@@ -4,7 +4,7 @@ import { Auth } from "../components/Auth";
 export const SignIn = () => {
   return (
     <div className="grid grid-cols-2">
-      <Auth type="signin"/>
+      <Auth type="login"/>
       <Quotes />
     </div>
   );

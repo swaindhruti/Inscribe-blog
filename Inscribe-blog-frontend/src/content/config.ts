@@ -1,0 +1,1 @@
+export const BACKEND_URL = "https://blog-backend.dhrutiswainnandan.workers.dev/api/v1";

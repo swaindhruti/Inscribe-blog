@@ -2,13 +2,27 @@ import { Link } from "react-router-dom";
 import { SignupInput } from "@swaindhruti/inscribe-common-modules";
 import { useState } from "react";
 import axios from "axios";
+import { BACKEND_URL } from "../content/config";
 
-export const Auth = ({ type }: { type: "signup" | "signin" }) => {
+export const Auth = ({ type }: { type: "signup" | "login" }) => {
   const [postInputs, setPostInputs] = useState<SignupInput>({
     name: "",
     username: "",
     password: "",
   });
+
+  async function sendSignupRequest() {
+    try {
+      const response = await axios.post(
+        `${BACKEND_URL}/user/${type === "signup" ? "signup" : "login"}`,
+        postInputs
+      );
+      const jwt = response.data.JWT_token;
+      localStorage.setItem("token", jwt);
+    } catch (e) {
+      alert("Error signing up! Verify the details and try again.");
+    }
+  }
 
   return (
     <div className="h-screen flex justify-center flex-col">
@@ -25,7 +39,7 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
               : "New to Inscribe? "}
             <Link
               className="hover:text-slate-900 underline transition-colors duration-200"
-              to={type === "signup" ? "/signin" : "/signup"}
+              to={type === "signup" ? "/login" : "/signup"}
             >
               {type === "signup" ? "Login" : "Join Us"}
             </Link>
@@ -64,6 +78,7 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
             }}
           />
           <button
+            onClick={sendSignupRequest}
             type="button"
             className="w-full text-white hover:bg-gray-900 font-medium rounded-lg text-sm px-5 py-3 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 transition-colors duration-200"
           >
