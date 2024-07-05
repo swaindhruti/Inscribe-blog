@@ -7,11 +7,11 @@ export const Quotes = () => {
           technical insights or personal stories, your voice matters on our
           platform Inscribe."
         </div>
-        <div className="text-left text-2xl font-semibold mb-2">
+        <div className="text-left text-2xl font-semibold mb-2.5">
           Dhrutinandan Swain
         </div>
         <div className=" text-xl text-slate-600 font-medium">
-          GDSC | Full Stack Developer
+          Full Stack Developer | DevOps & Web3 Enthusiast
         </div>
       </div>
     </div>
