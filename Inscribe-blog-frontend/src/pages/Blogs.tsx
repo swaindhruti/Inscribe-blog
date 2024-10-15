@@ -7,7 +7,7 @@ export const Blogs = () => {
         <div className="fixed top-0 w-full z-50">
       <Appbar  />
       </div>
-      <div className="flex flex-col justify-center pt-20 ml-20">
+      <div className="flex flex-col justify-center pt-20 ml-24">
         <BlogCard
           title="Title of the blog post learn git and github in 45 mins with me"
           authorName="John Doe"

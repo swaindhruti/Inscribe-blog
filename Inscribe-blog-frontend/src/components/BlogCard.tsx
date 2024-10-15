@@ -20,7 +20,7 @@ export const BlogCard = ({ authorName, date, content, title }: BlogCardProps) =>
             <div className="mt-2">{date}</div>
           </div>
         </div>
-        <div className="mb-2.5 text-3xl font-bold leading-normal">{title}</div>
+        <div className="mb-3.5 text-3xl font-bold leading-normal">{title}</div>
         <div className="mb-2.5 leading-7">
           {content.slice(0, 500)}{" ..."}
           </div>

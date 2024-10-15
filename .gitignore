@@ -1,16 +1,14 @@
+# VSCode
 .vscode
 
-// Inscribe-blog-backend
-
+# Inscribe-blog-backend
 Inscribe-blog-backend/node_modules
 Inscribe-blog-backend/.wrangler
 Inscribe-blog-backend/wrangler.toml
 Inscribe-blog-backend/.env
 
-// Inscribe-common-modules
-
+# Inscribe-common-modules
 Inscribe-common-modules/node_modules
 
-// Inscribe-blog-frontend
-
+# Inscribe-blog-frontend
 Inscribe-blog-frontend/node_modules
